@@ -8,7 +8,10 @@ function App() {
      <Button>
        Teste
      </Button>
-      <Logo></Logo>
+     <Button outline>
+       Teste 2
+     </Button>
+  <Logo></Logo>
     </div>
   );
 }
