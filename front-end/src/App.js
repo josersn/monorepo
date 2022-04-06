@@ -7,6 +7,9 @@ function App() {
      <Button>
        Teste
      </Button>
+     <Button outline>
+       Teste 2
+     </Button>
     </div>
   );
 }

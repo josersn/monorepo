@@ -1,10 +1,12 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Container } from './styles';
 
 function Button(props) {
     return (
-        <button>{props.children}</button>
+        <Container
+            outline={props.outline}
+        >{props.children}</Container>
     );
 }
 
