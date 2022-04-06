@@ -1,4 +1,5 @@
 import Button from "./components/button";
+import Logo from "./components/logo";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      <Button outline>
        Teste 2
      </Button>
+  <Logo></Logo>
     </div>
   );
 }
