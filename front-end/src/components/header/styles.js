@@ -10,4 +10,6 @@ export const Container = styled.header`
     align-items: center;
     font-size: 3rem;
     color: ${Colors.NEUTRAL_WHITE};
+    padding: 0 1.5rem;
+    background-color: ${props => props.outline ? Colors.MAIN_GREEN : Colors.NEUTRAL_WHITE} ;
 `;

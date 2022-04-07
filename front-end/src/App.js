@@ -1,13 +1,17 @@
 import Button from "./components/button";
-import Logo from "./components/logo";
 import Header from "./components/header";
 import { NormalizeStyles } from "./shared/NormalizeStyles";
-
+import Input from "./components/input";
 function App() {
+
+  const userNotLoggedIn = true;
+
   return (
     <div >
     <NormalizeStyles/>
-  <Header/>
+      <Header loggedIn={userNotLoggedIn} pageName="Teste" />
+      <Button />
+      <Input/>
     </div>
   );
 }

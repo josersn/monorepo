@@ -6,7 +6,7 @@ import esg from '../../assets/Icons/ESG.svg'
 function Logo(props) {
   return (<Container>
           <img src={logo}/>
-          ESG
+          {!props.showName && <h1>ESG</h1>}
           </Container>);
 }
 

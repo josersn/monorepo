@@ -8,4 +8,8 @@ export const Container = styled.div`
     align-items: center;
     color: ${Colors.NEUTRAL_WHITE};
     font-size: 1.5rem;
+
+    img {
+        margin-right: 1rem;
+    }
 `;

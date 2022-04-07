@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from './styles';
 import ProfilePic from "../../assets/Images/profilepic.svg"
 
-function Profile() {
+function Profile(props) {
   return <Container>
             <img src={ProfilePic}/>
             José Ramos
