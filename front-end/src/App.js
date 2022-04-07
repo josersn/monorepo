@@ -1,17 +1,12 @@
 import Button from "./components/button";
 import Logo from "./components/logo";
-
+import Header from "./components/header";
+import { NormalizeStyles } from "./shared/NormalizeStyles";
 function App() {
   return (
     <div >
-     <h1>Hello World</h1>
-     <Button>
-       Teste
-     </Button>
-     <Button outline>
-       Teste 2
-     </Button>
-  <Logo></Logo>
+    <NormalizeStyles/>
+  <Header/>
     </div>
   );
 }
