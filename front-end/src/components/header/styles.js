@@ -5,4 +5,9 @@ export const Container = styled.header`
     width: 100%;
     background-color: ${Colors.MAIN_GREEN};
     height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    color: ${Colors.NEUTRAL_WHITE};
 `;
