@@ -1,9 +1,11 @@
 import React from 'react';
 
-import { input } from './styles';
+import { Container } from './styles';
 
-function Input() {
-  return <input />;
+function Input(props) {
+  return <Container
+          placeholder={props.phText}
+          />;
 }
 
 export default Input;

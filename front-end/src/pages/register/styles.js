@@ -8,22 +8,22 @@ export const Container = styled.div`
 
     form {
         margin: auto;
-        width: 40%;
+        width: 100%;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         text-align: center;
         padding: 2rem 4rem;
         justify-content: space-around;
-        height: 60%;
-
+        height: 100%;
 
         h2 {
             width: 100%;
             font-size: 2rem;
+            margin-bottom: 2rem;
         }
 
         div {
-            width: 100%;
+            width: 50%;
 
             input {
                 margin-bottom: 3rem;
@@ -33,13 +33,10 @@ export const Container = styled.div`
 
         button {
             width: 20rem;
-            margin: 0 auto;
+            margin-bottom: 1rem;
         }
     }
 
-    img {
-        width: 60%;
-    }
 
 
 `;
