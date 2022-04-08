@@ -10,6 +10,9 @@ export const Container = styled.div`
     font-size: 1.5rem;
 
     img {
+        width: 4rem;
+        height: 4rem;
         margin-right: 1rem;
+        border-radius: 2rem;
     }
 `;

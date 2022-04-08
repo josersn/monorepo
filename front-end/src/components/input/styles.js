@@ -6,4 +6,5 @@ export const Container = styled.input`
     border-radius: 5px;
     font-size: 1.5rem;
     padding: 5px 8px;
+    width: ${props => props.small ? '30%' : '100%'} ;
 `;
