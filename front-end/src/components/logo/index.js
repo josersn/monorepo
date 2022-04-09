@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
-import logo from '../../assets/Icons/logo.svg'
-import esg from '../../assets/Icons/ESG.svg'
+import logo from '../../assets/icons/logo.svg'
+import ESG from '../../assets/icons/ESG.svg'
 
 function Logo(props) {
   return (<Container>

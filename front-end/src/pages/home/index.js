@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
-import Pagini from '../../assets/Images/Pagini.svg'
+import Pagini from '../../assets/images/Pagini.svg'
 import Input from '../../components/input';
 import Button from '../../components/button';
 function Home() {

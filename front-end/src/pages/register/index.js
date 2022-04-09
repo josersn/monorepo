@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from './styles';
 import Input from '../../components/input';
 import Button from '../../components/button';
-import RegPic from '../../assets/Icons/CadastroIcon.svg';
+import RegPic from '../../assets/icons/CadastroIcon.svg';
 function Register() {
   return (
     <Container>

@@ -1,25 +1,28 @@
-import Button from "./components/button";
-import Header from "./components/header";
+import {
+  BrowserRouter,
+  Route,
+  Routes
+} from "react-router-dom";
+
 import { NormalizeStyles } from "./shared/NormalizeStyles";
-import Input from "./components/input";
+
 import Home from "./pages/home";
 import Register from "./pages/register";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+
+import Header from "./components/header";
 function App() {
 
-  let userNotLoggedIn;
-  userNotLoggedIn = true;
-    return (
-    <Router>
-        <NormalizeStyles />
-        <Header loggedIn={userNotLoggedIn} pageName="Teste" />
-        <Route path="/" element={<Home/>}/>
-    </Router>
-    );
+  let userNotLoggedIn = true;
+  return (
+    <BrowserRouter>
+      <NormalizeStyles />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
