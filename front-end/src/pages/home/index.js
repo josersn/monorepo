@@ -11,8 +11,8 @@ function Home() {
         <h2>Login</h2>
 
         <div>
-          <Input phText="Insira seu nome de usuário ou email"/>
-          <Input phText="Insira sua senha"/>
+          <Input phText="Insira seu nome de usuário ou email" type="text"/>
+          <Input phText="Insira sua senha" type="password"/>
         </div>
       
         <Button>Entrar</Button>
@@ -21,7 +21,7 @@ function Home() {
 
         <Button outline>Cadastre-se</Button>
       </form>
-      <img src={Pagini}/>
+      <img src={Pagini} alt="Página"/>
     </Container>
   )
 }

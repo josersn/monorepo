@@ -12,7 +12,7 @@ import Register from "./pages/register";
 import Header from "./components/header";
 function App() {
 
-  let userNotLoggedIn = true;
+  // let userNotLoggedIn = true;
   return (
     <BrowserRouter>
       <NormalizeStyles />
