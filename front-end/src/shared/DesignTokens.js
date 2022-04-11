@@ -4,3 +4,8 @@ export const Colors = {
     NEUTRAL_WHITE: '#FFFFFF',
     NEUTRAL_BLACK: '#000000',
 };
+
+// variável para chamada rápida para testes e verificação de espaçamento
+export const Highlight = {
+    ALL: "* {border: solid 1px red;}",
+}
