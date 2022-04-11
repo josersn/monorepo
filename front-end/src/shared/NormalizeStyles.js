@@ -4,8 +4,6 @@ import { FontFamilies, Spaces } from './DesignTokens';
 
 export const NormalizeStyles = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
     * {
         box-sizing: border-box;
         margin: 0;
