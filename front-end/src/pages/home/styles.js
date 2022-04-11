@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Colors } from '../../shared/DesignTokens';
 
 export const Container = styled.div`
     display: flex;
@@ -38,7 +39,9 @@ export const Container = styled.div`
     }
 
     img {
-        width: 60%;
+        width: 50%;
+        background-color: ${Colors.MAIN_GREEN} ;
+        border-radius: 50px 0 0 0;
     }
 
 
