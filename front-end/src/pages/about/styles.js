@@ -1,6 +1,18 @@
 import styled from 'styled-components';
 
-export const Container = styled.form`
+export const Container = styled.main`
+    display: flex ;
+    flex-direction: column;
+
+    div{
+        width:  80%;
+        max-width: 480px ;    
+        margin: 0 auto ;
+        margin-top: 20px ;
+    }
+`;
+
+export const Form = styled.form`
     width:  80%;
     max-width: 480px ;
     margin: 0 auto ;
@@ -10,4 +22,4 @@ export const Container = styled.form`
     button {
         margin-left: 10px ;
     }
-`;
+`

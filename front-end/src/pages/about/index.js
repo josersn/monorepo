@@ -1,25 +1,46 @@
 import React, { useState } from 'react';
+
+import { api } from '../../services/api';
+
 import Button from '../../components/button';
 import Input from '../../components/input';
 
-import { Container } from './styles';
+import { Container, Form } from './styles';
 
 function About() {
 
     const [cep, setCep] = useState("");
+    const [showResult, setShowResult] = useState(false);
+    const [result, setResult] = useState({});
 
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
-        console.log(cep)
+
+        const { data } = await api.get(`${cep}/json/`);
+        console.log(data);
+        setResult(data);
+        setShowResult(true);
+
     }
     return (
         <Container onSubmit={handleSubmit}>
-            <Input
-                placeholder="Digite seu CEP."
-                name="cep"
-                onChange={e => setCep(e.target.value)} />
-            <Button>Procurar CEP</Button>
+            <Form>
+                <Input
+                    placeholder="Digite seu CEP."
+                    name="cep"
+                    onChange={e => setCep(e.target.value)} />
+                <Button>Procurar CEP</Button>
+            </Form>
+            {showResult && (
+                <div>
+                    <p>Logradouro: {result.logradouro}</p>
+                    <p>Bairro: {result.bairro}</p>
+                    <p>Cidade: {result.localidade}</p>
+                    <p>uf: {result.uf}</p>
+                    <p>DDD: {result.ddd}</p>
+                </div>
+            )}
         </Container>
     );
 }
