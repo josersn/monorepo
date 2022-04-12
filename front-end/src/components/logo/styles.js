@@ -4,12 +4,17 @@ import { Colors } from '../../shared/DesignTokens';
 export const Container = styled.div`
     height: 100%;
     display: inline-flex;
-    justify-content: space-between;
-    color: ${Colors.MAIN_GREEN};
-    font-size: 2rem;
     align-items: center;
+    color: ${Colors.MAIN_GREEN};
+    font-size: 4vh;
+    align-items: center;
+    width: 20%;
+    
+    img {
+        height: 9vh;
+    }
 
     h1 {
-        margin-left: 1rem;
+        margin-left: 0.5rem;
     }
 `;

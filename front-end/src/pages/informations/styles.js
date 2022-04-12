@@ -15,5 +15,6 @@ export const Container = styled.div`
     .formation-image {
         width: 30%;
         align-self: center;
+        padding: 1rem;
     }
 `;

@@ -1,29 +1,116 @@
 {
-    "name": "Formação",
-    "cards": [
-        {
-            "img": "assets/icons/santander.svg",
-            "title": "SRE Foundation |  Santander ",
-            "texts": [
-                "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
-                "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
-            ]
-        },
-        {
-            "img": "assets/icons/fiap.svg",
-            "title": "Domain Driven Design (Java), Cloud Computing | FIAP",
-            "texts": [
-                "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
-                "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
-            ]
-        },
-        {
-            "img": "assets/icons/alura.svg",
-            "title": "Devops & Agile Culture | Alura",
-            "texts": [
-                "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
-                "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
-            ]
-        }
-    ]
+    "pages": [{
+        "name": "Formação",
+        "image" : "../../assets/images/formação.svg",
+        "cards": [{
+                "img": "assets/icons/santander.svg",
+                "title": "SRE Foundation |  Santander ",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            },
+            {
+                "img": "assets/icons/fiap.svg",
+                "title": "Domain Driven Design (Java), Cloud Computing | FIAP",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            },
+            {
+                "img": "assets/icons/alura.svg",
+                "title": "Devops & Agile Culture | Alura",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            }
+        ]
+    },{
+        "name": "Experiência",
+        "image" : "../../assets/images/formação.svg",
+        "cards": [{
+                "img": "assets/icons/santander.svg",
+                "title": "SRE Foundation |  Santander 2",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            },
+            {
+                "img": "assets/icons/fiap.svg",
+                "title": "Domain Driven Design (Java), Cloud Computing | FIAP 2",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            },
+            {
+                "img": "assets/icons/alura.svg",
+                "title": "Devops & Agile Culture | Alura 2",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            }
+        ]
+    },{
+        "name": "Hobbies",
+        "image" : "../../assets/images/formação.svg",
+        "cards": [{
+                "img": "assets/icons/santander.svg",
+                "title": "SRE Foundation |  Santander 3",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            },
+            {
+                "img": "assets/icons/fiap.svg",
+                "title": "Domain Driven Design (Java), Cloud Computing | FIAP 3",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            },
+            {
+                "img": "assets/icons/alura.svg",
+                "title": "Devops & Agile Culture | Alura 3",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            }
+        ]
+    },{
+        "name": "Sobre mim",
+        "image" : "../../assets/images/formação.svg",
+        "cards": [{
+                "img": "assets/icons/santander.svg",
+                "title": "SRE Foundation |  Santander 4",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            },
+            {
+                "img": "assets/icons/fiap.svg",
+                "title": "Domain Driven Design (Java), Cloud Computing | FIAP 4",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            },
+            {
+                "img": "assets/icons/alura.svg",
+                "title": "Devops & Agile Culture | Alura 4",
+                "texts": [
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur.",
+                    "Lorem ipsum dolor sit amet. Ut iusto sapiente et laborum quae rem voluptatem neque. Ut laboriosam esse hic sapiente vitae aut accusantium et repudiandae deserunt aut eveniet consequatur."
+                ]
+            }
+        ]
+    }
+]
 }

@@ -13,7 +13,8 @@ import Information from "./pages/informations";
 import Header from "./components/header";
 function App() {
 
-  let userNotLoggedIn = true;
+  let userNotLoggedIn;
+  userNotLoggedIn = true;
   return (
     <BrowserRouter>
       <NormalizeStyles />
@@ -21,7 +22,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/formations" element={<Information />} />
+        <Route path="/formations" element={<Information pageName="Formação"/>} />
+        <Route path="/experience" element={<Information pageName="Experiência"/>} />
+        <Route path="/hobbies" element={<Information pageName="Hobbies"/>} />
+        <Route path="/aboutme" element={<Information pageName="Sobre mim"/>} />
       </Routes>
     </BrowserRouter>
   );

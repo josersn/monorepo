@@ -8,11 +8,12 @@ export const Container = styled.div`
     align-items: center;
     color: ${Colors.NEUTRAL_WHITE};
     font-size: 1.5rem;
-
+    width: 20%;
     img {
-        width: 4rem;
-        height: 4rem;
-        margin-right: 1rem;
+        padding: 0.5rem;
+        max-width: 4rem;
+        max-height: 4rem;
+        margin-left: 1rem;
         border-radius: 2rem;
     }
 `;
