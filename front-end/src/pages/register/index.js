@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Input from '../../components/input';
 import Button from '../../components/button';
@@ -7,12 +7,23 @@ import Button from '../../components/button';
 import RegPic from '../../assets/icons/CadastroIcon.svg';
 
 import { Container } from './styles';
-function Register() {
+
+function Register(props) {
+
+  const navigate = useNavigate();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    navigate("/formations");
+    props.loginFunction();
+  }
+
+
   return (
     <Container>
 
       <h2>Preencha com seus dados:</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
 
         <div>
           <Input phText="Insira seu nome" />
