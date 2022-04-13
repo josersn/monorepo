@@ -13,13 +13,14 @@ export const Container = styled.main`
 `;
 
 export const Form = styled.form`
+
     width:  80%;
     max-width: 480px ;
     margin: 0 auto ;
     margin-top: 120px ;
-    display: flex;
+    display: ${props => props.visible ? "flex" : "none"} ;
 
     button {
         margin-left: 10px ;
     }
-`
+`;

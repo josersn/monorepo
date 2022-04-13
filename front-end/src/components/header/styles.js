@@ -14,17 +14,30 @@ export const Container = styled.header`
     background-color: ${props => props.outline ? Colors.MAIN_GREEN : Colors.NEUTRAL_WHITE} ;
 
     nav {
-        display: flex;
-        align-items: center;
         width: auto;
         height: 10vh;
+
         ul {
             width: inherit;
             display: inline-flex;
             list-style: none;
             justify-content: space-between;
-            
+            height: 100%;
+
+            .active {
+                background-color: ${Colors.NEUTRAL_WHITE};
+                color: ${Colors.MAIN_GREEN};
+                border: 1px solid ${Colors.MAIN_GREEN};
+
+                a {
+                    font-weight: bold;
+                    border: none;
+                }
+            }
+
             li {
+                display: flex;
+                align-items: center;
                 padding: 0 1rem;
                 width: auto;
 

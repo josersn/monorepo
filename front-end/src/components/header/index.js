@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { Container } from './styles';
 import Logo from '../logo';
 import Profile from '../profile';
@@ -6,7 +5,6 @@ import { NavLink, useLocation } from 'react-router-dom';
 function Header(props) {
 
 const location = useLocation();
-console.log(location.pathname);
 
 return <Container
             outline={props.loggedIn}

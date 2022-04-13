@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { Colors } from '../../shared/DesignTokens';
 
 export const Container = styled.div`
+  display: ${props => props.visible ? "flex" : "none"} ;
   justify-content: center;
-  display: flex;
   width: 90%;
   align-items: center;
   border-bottom: solid 1px ${Colors.LIGHT_GRAY};

@@ -23,6 +23,7 @@ function About() {
         setShowResult(true);
 
     }
+
     return (
         <Container onSubmit={handleSubmit}>
             <Form>

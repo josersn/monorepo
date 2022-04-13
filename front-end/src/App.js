@@ -10,7 +10,7 @@ import Home from "./pages/home";
 import Register from "./pages/register";
 import Information from "./pages/informations";
 import Header from "./components/header";
-
+import About from "./pages/about";
 function App() {
 
   let userNotLoggedIn;
@@ -26,6 +26,7 @@ function App() {
         <Route path="/experience" element={<Information pageName="Experiência"/>} />
         <Route path="/hobbies" element={<Information pageName="Hobbies"/>} />
         <Route path="/aboutme" element={<Information pageName="Sobre mim"/>} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

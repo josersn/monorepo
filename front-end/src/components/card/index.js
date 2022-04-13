@@ -3,7 +3,9 @@ import { Container } from './styles';
 
 function card(props) {
     return (
-        <Container>
+        <Container
+            visible={props.visible}
+            >
             <div className='card-header'>
                 <img src={props.card.img} alt={props.card.title} />
             </div>
