@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from './styles';
 import Logo from '../logo';
 import Profile from '../profile';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 function Header(props) {
-console.log(window.location.pathname);
+
+const location = useLocation();
+console.log(location.pathname);
+
 return <Container
             outline={props.loggedIn}
           >
@@ -13,10 +16,10 @@ return <Container
           <>
           <nav>
             <ul>
-              <li><NavLink to="/formations">Formação</NavLink></li>
-              <li><NavLink to="/experience">Experiência</NavLink></li>
-              <li><NavLink to="/hobbies">Hobbies</NavLink></li>
-              <li><NavLink to="/aboutme">Sobre mim</NavLink></li>
+              <li className={location.pathname == "/formations" ? "active" : ""}><NavLink to="/formations">Formação</NavLink></li>
+              <li className={location.pathname == "/experience" ? "active" : ""}><NavLink to="/experience">Experiência</NavLink></li>
+              <li className={location.pathname == "/hobbies" ? "active" : ""}><NavLink to="/hobbies">Hobbies</NavLink></li>
+              <li className={location.pathname == "/aboutme" ? "active" : ""}><NavLink to="/aboutme">Sobre mim</NavLink></li>
             </ul>
           </nav>
           <Profile/>
