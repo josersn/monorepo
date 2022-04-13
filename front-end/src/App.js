@@ -34,7 +34,7 @@ function App() {
         <Route path="/formations" element={<Information pageName={handlePageName("Formação")} />} />
         <Route path="/experience" element={<Information pageName={handlePageName("Experiência")}/>} />
         <Route path="/hobbies" element={<Information pageName={handlePageName("Hobbies")}/>} />
-        <Route path="/aboutme" element={<About pageName={handlePageName("Sobre")}/>} />
+        <Route path="/about" element={<About pageName={handlePageName("Sobre")}/>} />
       </Routes>
     </BrowserRouter>
   );
