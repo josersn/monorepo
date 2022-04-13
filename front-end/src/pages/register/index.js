@@ -26,25 +26,25 @@ function Register(props) {
       <form onSubmit={handleSubmit}>
 
         <div>
-          <Input phText="Insira seu nome" />
-          <Input phText="Insira seu nome social" />
-          <Input phText="Insira seu email" />
-          <Input phText="Insira seu número de telefone" />
+          <Input required phText="Insira seu nome" />
+          <Input required phText="Insira seu nome social" />
+          <Input required phText="Insira seu email" />
+          <Input required phText="Insira seu número de telefone" />
           <div>
-            <Input small phText="CEP:" />
-            <Input small phText="Nº" />
-            <Input small phText="UF:" />
+            <Input required small phText="CEP:" />
+            <Input required small phText="Nº" />
+            <Input required small phText="UF:" />
           </div>
-          <Input phText="Insira seu logradouro" />
-          <Input phText="Insira seu bairro" />
+          <Input required phText="Insira seu logradouro" />
+          <Input required phText="Insira seu bairro" />
           <Input phText="Insira um complemento (opcional)" />
         </div>
 
         <div>
-          <Input phText="Crie uma senha" />
-          <Input phText="Reescreva sua senha" />
+          <Input required phText="Crie uma senha" />
+          <Input required phText="Reescreva sua senha" />
 
-          <img src={RegPic} />
+          <img src={RegPic} alt="Registrar" />
           <h4>Envie sua foto</h4>
           <Button>Cadastrar</Button>
 

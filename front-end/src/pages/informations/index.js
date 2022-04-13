@@ -9,7 +9,7 @@ function Information(props) {
 
     useEffect(() => {
     setData(
-        dataToShow.pages.find(item => item.name == props.pageName))
+        dataToShow.pages.find(item => item.name === props.pageName))
         setLoading(true);
     }, [props.pageName])
 
@@ -23,7 +23,7 @@ function Information(props) {
                 ))
             }
             </div>
-            <img className='formation-image' src={data.image}/>
+            <img className='formation-image' src={data.image} alt="Formações"/>
 
         </>)
         }

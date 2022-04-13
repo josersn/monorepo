@@ -5,7 +5,7 @@ import ProfilePic from "../../assets/images/profilepic.jpg"
 function Profile(props) {
   return <Container>
             José Ramos
-            <img src={ProfilePic}/>
+            <img src={ProfilePic} alt="José Ramos"/>
          </Container>;
 }
 

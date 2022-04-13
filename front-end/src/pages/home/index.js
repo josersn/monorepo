@@ -20,8 +20,8 @@ function Home(props) {
         <h2>Login</h2>
 
         <div>
-          <Input phText="Insira seu nome de usuário ou email" type="text" />
-          <Input phText="Insira sua senha" type="password" />
+          <Input phText="Insira seu nome de usuário ou email" type="text" required />
+          <Input phText="Insira sua senha" type="password" required />
         </div>
 
         <Button>Entrar</Button>
