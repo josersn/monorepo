@@ -9,8 +9,9 @@ import { NormalizeStyles } from "./shared/NormalizeStyles";
 import Home from "./pages/home";
 import Register from "./pages/register";
 import Information from "./pages/informations";
-
 import Header from "./components/header";
+import About from "./pages/about";
+
 function App() {
 
   let userNotLoggedIn;

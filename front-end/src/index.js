@@ -1,10 +1,8 @@
 import React, { StrictMode } from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 
-render(
+createRoot(document.getElementById('esg')).render(
   <StrictMode>
     <App />
-  </StrictMode>,
-  document.getElementById('esg')
-);
+  </StrictMode>)
