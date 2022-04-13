@@ -1,7 +1,7 @@
 {
     "pages": [{
         "name": "Formação",
-        "image" : "../../assets/images/formação.svg",
+        "image" : "./assets/images/formação.svg",
         "cards": [{
                 "img": "assets/icons/santander.svg",
                 "title": "SRE Foundation |  Santander ",
@@ -29,7 +29,7 @@
         ]
     },{
         "name": "Experiência",
-        "image" : "../../assets/images/formação.svg",
+        "image" : "./assets/images/experiencia.svg",
         "cards": [{
                 "img": "assets/icons/santander.svg",
                 "title": "SRE Foundation |  Santander 2",
@@ -57,7 +57,7 @@
         ]
     },{
         "name": "Hobbies",
-        "image" : "../../assets/images/formação.svg",
+        "image" : "./assets/images/hobbies.svg",
         "cards": [{
                 "img": "assets/icons/santander.svg",
                 "title": "SRE Foundation |  Santander 3",
@@ -85,7 +85,7 @@
         ]
     },{
         "name": "Sobre mim",
-        "image" : "../../assets/images/formação.svg",
+        "image" : "./assets/images/profilepic.jpg",
         "cards": [{
                 "img": "assets/icons/santander.svg",
                 "title": "SRE Foundation |  Santander 4",

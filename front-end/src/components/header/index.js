@@ -4,7 +4,8 @@ import Logo from '../logo';
 import Profile from '../profile';
 import { NavLink } from 'react-router-dom';
 function Header(props) {
-  return <Container
+console.log(window.location.pathname);
+return <Container
             outline={props.loggedIn}
           >
         <Logo showName={props.loggedIn}/>

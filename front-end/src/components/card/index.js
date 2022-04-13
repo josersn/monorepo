@@ -1,12 +1,11 @@
 import React from 'react';
-import Batata from "../../assets/icons/santander.svg";
 import { Container } from './styles';
 
 function card(props) {
     return (
         <Container>
             <div className='card-header'>
-                <img src={Batata} alt="santander" />
+                <img src={props.card.img} alt={props.card.title} />
             </div>
             <div className='card-body'>
                 <h2>{props.card.title}</h2>
