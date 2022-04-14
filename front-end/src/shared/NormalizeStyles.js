@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { FontFamilies, Spaces } from './DesignTokens';
-
 export const NormalizeStyles = createGlobalStyle`
 
     * {

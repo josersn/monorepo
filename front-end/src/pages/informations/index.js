@@ -27,7 +27,7 @@ function Information(props) {
 
     useEffect(() => {
     setData(
-        dataToShow.pages.find(item => item.name == props.pageName))
+        dataToShow.pages.find(item => item.name === props.pageName))
         setLoading(true);
     }, [props.pageName])
 

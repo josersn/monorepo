@@ -1,19 +1,27 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Container } from './styles';
 import Pagini from '../../assets/images/Pagini.svg'
 import Input from '../../components/input';
 import Button from '../../components/button';
-function Home() {
+function Home(props) {
+
+  const navigate = useNavigate();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    navigate("/formations");
+    props.loginFunction();
+  }
   return (
     <Container>
-      <form>
+      <form onSubmit={handleSubmit}>
 
         <h2>Login</h2>
 
         <div>
-          <Input phText="Insira seu nome de usuário ou email" type="text" />
-          <Input phText="Insira sua senha" type="password" />
+          <Input phText="Insira seu nome de usuário ou email" type="text" required />
+          <Input phText="Insira sua senha" type="password" required />
         </div>
 
         <Button>Entrar</Button>
