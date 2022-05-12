@@ -9,6 +9,11 @@ export const Container = styled.div`
   border-bottom: solid 1px ${Colors.LIGHT_GRAY};
   .card-header {
       width: 10%;
+      img {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 12px;
+      }
   }
   .card-body {
       width: 80%;
