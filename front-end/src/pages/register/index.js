@@ -4,7 +4,6 @@ import { Link, useNavigate } from "react-router-dom";
 import Input from '../../components/input';
 import Button from '../../components/button';
 
-// import RegPic from '../../assets/icons/CadastroIcon.svg';
 
 import { Container } from './styles';
 
@@ -44,7 +43,7 @@ function Register(props) {
           <Input required phText="Crie uma senha" />
           <Input required phText="Reescreva sua senha" />
 
-          {/* <img src={RegPic} alt="Registrar" /> */}
+          <img src='assets/icons/CadastroIcon.svg' alt="Registrar" />
           <h4>Envie sua foto</h4>
           <Button>Cadastrar</Button>
 
