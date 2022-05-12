@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import { Container } from './styles';
-import Pagini from '../../assets/images/Pagini.svg'
+// import Pagini from '../../assets/images/Pagini.svg'
 import Input from '../../components/input';
 import Button from '../../components/button';
 function Home(props) {
