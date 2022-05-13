@@ -7,6 +7,11 @@ export const Container = styled.div`
     width: 100%;
     height: 90vh;
 
+    .erro {
+        color: red;
+        font-size: 1.2rem;
+    }
+
     form {
         margin: auto;
         width: 40%;
@@ -27,7 +32,7 @@ export const Container = styled.div`
             width: 100%;
 
             input {
-                margin-bottom: 3rem;
+                margin: 1rem 0;
                 width: 100%;
             }
         }
