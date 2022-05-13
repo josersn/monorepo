@@ -22,24 +22,19 @@ const validate = values => {
 
 
 function Home(props) {
- 
-      function formSubmit(e) {
-        e.preventDefault();
-        navigate("/formations");
-        props.loginFunction();
-      }
 
   const navigate = useNavigate();
-
-
+ 
   const formik = useFormik({
+
     initialValues: {
       username: "",
       password: ""
     },
     validate,
     onSubmit: e => {
-      formSubmit(e);
+       navigate("/formations");
+       props.loginFunction();
     }
 
   });
@@ -49,7 +44,6 @@ function Home(props) {
       <form onSubmit={formik.handleSubmit}>
 
         <h2>Login</h2>
-
         <div>
           <Input
             id="username"
