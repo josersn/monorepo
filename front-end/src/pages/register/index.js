@@ -13,8 +13,8 @@ const validate = values => {
     errors.nomeDeUsuario = "Minimo de 6 caracteres";
   } 
 
-  if (values.nome.length < 15) {
-    errors.nome = "Minimo de 15 caracteres";
+  if (values.nome.length < 10) {
+    errors.nome = "Minimo de 10 caracteres";
   } 
 
   if (!values.email.match(/^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/)) {
@@ -26,11 +26,11 @@ const validate = values => {
   } 
 
   if (values.cep.length < 8) {
-    errors.cep = "Insira um CEP válido";
+    errors.cep = "CEP inválido";
   } 
 
   if (values.numero.length > 3) {
-    errors.numero = "Insira um número válido";
+    errors.numero = "Número inválido";
   } 
 
   if (values.uf.length <= 0) {
@@ -102,7 +102,7 @@ function Register(props) {
             value={formik.values.nomeDeUsuario}
             // required
             phText="Insira seu nome de usuário" />
-             {formik.errors.nomeDeUsuario ? <p className='erro'>{formik.errors.nomeDeUsuario}</p> : null}
+             <p className='erro'>{formik.errors.nomeDeUsuario ? formik.errors.nomeDeUsuario : ""}</p>
 
           <Input 
             id="nome"
@@ -112,7 +112,7 @@ function Register(props) {
             value={formik.values.nome}
             // required
             phText="Insira seu nome social" />
-             {formik.errors.nome ? <p className='erro'>{formik.errors.nome}</p> : null}
+             <p className='erro'>{formik.errors.nome ? formik.errors.nome : ""}</p>
 
           <Input
             id="email"
@@ -122,7 +122,7 @@ function Register(props) {
             value={formik.values.email}
             // required
             phText="Insira seu email" />
-             {formik.errors.email ? <p className='erro'>{formik.errors.email}</p> : null}
+             <p className='erro'>{formik.errors.email ? formik.errors.email : ""}</p>
 
           <Input
             id="telefone"
@@ -132,9 +132,9 @@ function Register(props) {
             value={formik.values.telefone}
             // required
             phText="Insira seu número de telefone" />
-             {formik.errors.telefone ? <p className='erro'>{formik.errors.telefone}</p> : null}
+             <p className='erro'>{formik.errors.telefone ? formik.errors.telefone : ""}</p>
 
-          <div>
+          <div className='smallInputs'>
             <Input             
               id="cep"
               name="cep"
@@ -143,7 +143,6 @@ function Register(props) {
               value={formik.values.cep}
               // required
               small phText="CEP:" />
-             {formik.errors.cep ? <p className='erro'>{formik.errors.cep}</p> : null}
 
             <Input             
               id="numero"
@@ -153,7 +152,6 @@ function Register(props) {
               value={formik.values.numero}
               // required
               small phText="Nº" />
-             {formik.errors.numero ? <p className='erro'>{formik.errors.numero}</p> : null}
 
             <Input             
               id="uf"
@@ -163,9 +161,12 @@ function Register(props) {
               value={formik.values.uf}
               // required
               small phText="UF:" />
-             {formik.errors.uf ? <p className='erro'>{formik.errors.uf}</p> : null}
+              <p className='erro'>{formik.errors.cep ? formik.errors.cep : ""}</p>
+              <p className='erro'>{formik.errors.numero ? formik.errors.numero : ""}</p>
+              <p className='erro'>{formik.errors.uf ? formik.errors.uf : ""}</p>
 
           </div>
+
           <Input             
               id="logradouro"
               name="logradouro"
@@ -174,7 +175,7 @@ function Register(props) {
               value={formik.values.logradouro}
               // required
               phText="Insira seu logradouro" />
-             {formik.errors.logradouro ? <p className='erro'>{formik.errors.logradouro}</p> : null}
+             <p className='erro'>{formik.errors.logradouro ? formik.errors.logradouro : ""}</p>
 
           <Input             
               id="bairro"
@@ -184,7 +185,7 @@ function Register(props) {
               value={formik.values.bairro}
               // required
               phText="Insira seu bairro" />
-             {formik.errors.bairro ? <p className='erro'>{formik.errors.bairro}</p> : null}
+             <p className='erro'>{formik.errors.bairro ? formik.errors.bairro : ""}</p>
 
           <Input 
             id="complemento"
@@ -204,7 +205,7 @@ function Register(props) {
               value={formik.values.senha}
               // required
               phText="Crie uma senha" />
-             {formik.errors.senha ? <p className='erro'>{formik.errors.senha}</p> : null}
+             <p className='erro'>{formik.errors.senha ? formik.errors.senha : ""}</p>
 
           <Input             
               id="verifSenha"
@@ -214,7 +215,7 @@ function Register(props) {
               value={formik.values.verifSenha}
               // required
               phText="Reescreva sua senha" />
-             {formik.errors.verifSenha ? <p className='erro'>{formik.errors.verifSenha}</p> : null}
+             <p className='erro'>{formik.errors.verifSenha ? formik.errors.verifSenha : ""}</p>
 
           <img src='assets/icons/CadastroIcon.svg' alt="Registrar" />
           <h4>Envie sua foto</h4>

@@ -7,7 +7,10 @@ export const Container = styled.div`
 
     .erro {
         color: red;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        height: 1rem;
+        text-align: left;
+        margin-left: 1rem;
     }
 
     h2 {
@@ -27,12 +30,20 @@ export const Container = styled.div`
         justify-content: space-around;
         height: 90%;
 
+        .smallInputs {
+            display: flex;
+            flex-flow: row wrap;
+            p {
+                width: 30%;
+            }
+        }
+
         div {
             width: 50%;
             padding: 1rem 5rem;
 
             input {
-                margin-bottom: 3rem;
+                margin-top: 1rem ;
             }
 
             div {
@@ -51,6 +62,10 @@ export const Container = styled.div`
                 padding: 1rem;
                 font-size: 2rem;
                 color: ${Colors.SUB_GREEN};
+            }
+
+            img {
+                margin-top: 1rem;
             }
 
         }
