@@ -25,6 +25,34 @@ const validate = values => {
     errors.telefone = "Insira um número válido";
   } 
 
+  if (values.cep.length < 8) {
+    errors.cep = "Insira um CEP válido";
+  } 
+
+  if (values.numero.length > 3) {
+    errors.numero = "Insira um número válido";
+  } 
+
+  if (values.uf.length <= 0) {
+    errors.uf = "Insira um estado";
+  } 
+
+  if (values.logradouro.length <= 0) {
+    errors.logradouro = "Insira um logradouro";
+  } 
+
+  if (values.bairro.length <= 0) {
+    errors.bairro = "Insira um bairro";
+  } 
+
+  if (values.senha.length < 6) {
+    errors.senha = "Mínimo de 6 caracteres";
+  } 
+
+  if (values.verifSenha != values.senha) {
+    errors.verifSenha = "Senhas não correspondem";
+  } 
+
   return errors;
 
 };
@@ -132,7 +160,7 @@ function Register(props) {
               name="uf"
               type="text"
               onChange={formik.handleChange}
-              value={formik.values.logradouro}
+              value={formik.values.uf}
               // required
               small phText="UF:" />
              {formik.errors.uf ? <p className='erro'>{formik.errors.uf}</p> : null}
@@ -159,11 +187,11 @@ function Register(props) {
              {formik.errors.bairro ? <p className='erro'>{formik.errors.bairro}</p> : null}
 
           <Input 
-            id="bairro"
-            name="bairro"
+            id="complemento"
+            name="complemento"
             type="text"
             onChange={formik.handleChange}
-            value={formik.values.bairro}
+            value={formik.values.complemento}
             phText="Insira um complemento (opcional)" />
         </div>
 
