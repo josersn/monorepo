@@ -4,10 +4,31 @@ import { useFormik } from "formik";
 import Input from '../../components/input';
 import Button from '../../components/button';
 import { Container } from './styles';
+import { mascaraNome, mascaraTelefone, mascaraCep, mascaraUf, mascaraNumero } from '../../scripts/masks';
 
 const validate = values => {
 
   const errors = {};
+
+  document.getElementById('nome').onkeyup = function() {
+    mascaraNome(document.getElementById('nome'));
+  }
+  
+  document.getElementById('telefone').onkeyup = function() {
+    mascaraTelefone(document.getElementById('telefone'));
+  }
+
+  document.getElementById('cep').onkeyup = function() {
+    mascaraCep(document.getElementById('cep'));
+  }
+
+  document.getElementById('uf').onkeyup = function() {
+    mascaraUf(document.getElementById('uf'));
+  }
+
+  document.getElementById('numero').onkeyup = function() {
+    mascaraNumero(document.getElementById('numero'));
+  }
 
   if (values.nomeDeUsuario.length < 6) {
     errors.nomeDeUsuario = "Minimo de 6 caracteres";
@@ -21,15 +42,15 @@ const validate = values => {
     errors.email = "Insira um email válido";
   } 
 
-  if (!values.telefone.match(/(\(?\d{2}\)?\s)?(\d{4,5}\-\d{4})/g)) {
+  if (values.telefone.length < 14) {
     errors.telefone = "Insira um número válido";
   } 
 
-  if (values.cep.length < 8) {
+  if (values.cep.length < 9) {
     errors.cep = "CEP inválido";
   } 
 
-  if (values.numero.length > 3) {
+  if (values.numero.length <= 0) {
     errors.numero = "Número inválido";
   } 
 
