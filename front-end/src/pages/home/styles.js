@@ -9,7 +9,10 @@ export const Container = styled.div`
 
     .erro {
         color: red;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        height: 1rem;
+        text-align: left;
+        margin: 0.5rem 0 0.5rem 1rem;
     }
 
     form {
@@ -32,7 +35,6 @@ export const Container = styled.div`
             width: 100%;
 
             input {
-                margin: 1rem 0;
                 width: 100%;
             }
         }
