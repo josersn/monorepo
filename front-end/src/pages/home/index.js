@@ -53,7 +53,7 @@ function Home(props) {
             value={formik.values.username}
             phText="Insira seu nome de usuário ou email"
             required />
-        {formik.errors.username ? <p className='erro'>{formik.errors.username}</p> : null}
+          {formik.errors.username ? <p className='erro'>{formik.errors.username}</p> : null}
 
           <Input
             id="password"
