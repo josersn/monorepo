@@ -99,13 +99,13 @@ function Register(props) {
       verifSenha: ""
     },
     validate,
-    onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
-    }
-    // onSubmit: e => {
-//        navigate("/formations");
-      //  props.loginFunction();
+    // onSubmit: values => {
+//       alert(JSON.stringify(values, null, 2));
     // }
+    onSubmit: e => {
+       navigate("/formations");
+       props.loginFunction();
+    }
   });
 
   return (
@@ -138,7 +138,7 @@ function Register(props) {
           <Input
             id="email"
             name="email"
-            type="text"
+            type="email"
             onChange={formik.handleChange}
             value={formik.values.email}
             // required
@@ -221,7 +221,7 @@ function Register(props) {
           <Input             
               id="senha"
               name="senha"
-              type="text"
+              type="password"
               onChange={formik.handleChange}
               value={formik.values.senha}
               // required
@@ -231,7 +231,7 @@ function Register(props) {
           <Input             
               id="verifSenha"
               name="verifSenha"
-              type="text"
+              type="password"
               onChange={formik.handleChange}
               value={formik.values.verifSenha}
               // required
