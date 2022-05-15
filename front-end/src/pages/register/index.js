@@ -121,7 +121,7 @@ function Register(props) {
             type="text"
             onChange={formik.handleChange}
             value={formik.values.nomeDeUsuario}
-            // required
+            required
             phText="Insira seu nome de usuário" />
              <p className='erro'>{formik.errors.nomeDeUsuario ? formik.errors.nomeDeUsuario : ""}</p>
 
@@ -131,7 +131,7 @@ function Register(props) {
             type="text"
             onChange={formik.handleChange}
             value={formik.values.nome}
-            // required
+            required
             phText="Insira seu nome social" />
              <p className='erro'>{formik.errors.nome ? formik.errors.nome : ""}</p>
 
@@ -141,7 +141,7 @@ function Register(props) {
             type="email"
             onChange={formik.handleChange}
             value={formik.values.email}
-            // required
+            required
             phText="Insira seu email" />
              <p className='erro'>{formik.errors.email ? formik.errors.email : ""}</p>
 
@@ -151,7 +151,7 @@ function Register(props) {
             type="text"
             onChange={formik.handleChange}
             value={formik.values.telefone}
-            // required
+            required
             phText="Insira seu número de telefone" />
              <p className='erro'>{formik.errors.telefone ? formik.errors.telefone : ""}</p>
 
@@ -162,7 +162,7 @@ function Register(props) {
               type="text"
               onChange={formik.handleChange}
               value={formik.values.cep}
-              // required
+              required
               small phText="CEP:" />
 
             <Input             
@@ -171,7 +171,7 @@ function Register(props) {
               type="text"
               onChange={formik.handleChange}
               value={formik.values.numero}
-              // required
+              required
               small phText="Nº" />
 
             <Input             
@@ -180,7 +180,7 @@ function Register(props) {
               type="text"
               onChange={formik.handleChange}
               value={formik.values.uf}
-              // required
+              required
               small phText="UF:" />
               <p className='erro'>{formik.errors.cep ? formik.errors.cep : ""}</p>
               <p className='erro'>{formik.errors.numero ? formik.errors.numero : ""}</p>
@@ -194,7 +194,7 @@ function Register(props) {
               type="text"
               onChange={formik.handleChange}
               value={formik.values.logradouro}
-              // required
+              required
               phText="Insira seu logradouro" />
              <p className='erro'>{formik.errors.logradouro ? formik.errors.logradouro : ""}</p>
 
@@ -204,7 +204,7 @@ function Register(props) {
               type="text"
               onChange={formik.handleChange}
               value={formik.values.bairro}
-              // required
+              required
               phText="Insira seu bairro" />
              <p className='erro'>{formik.errors.bairro ? formik.errors.bairro : ""}</p>
 
@@ -224,7 +224,7 @@ function Register(props) {
               type="password"
               onChange={formik.handleChange}
               value={formik.values.senha}
-              // required
+              required
               phText="Crie uma senha" />
              <p className='erro'>{formik.errors.senha ? formik.errors.senha : ""}</p>
 
@@ -234,7 +234,7 @@ function Register(props) {
               type="password"
               onChange={formik.handleChange}
               value={formik.values.verifSenha}
-              // required
+              required
               phText="Reescreva sua senha" />
              <p className='erro'>{formik.errors.verifSenha ? formik.errors.verifSenha : ""}</p>
 
