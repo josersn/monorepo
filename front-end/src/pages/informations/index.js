@@ -6,6 +6,18 @@ import { useLocation } from 'react-router-dom';
 import { api } from '../../services/api';
 import Button from '../../components/button';
 import Input from '../../components/input';
+import { useFormik } from "formik";
+
+const validate = values => {
+
+  const errors = {};
+
+  if (values.cep.length != 8) {
+    errors.cep = "Insira um CEP válido";
+  }
+
+  return errors;
+};
 
 function Information(props) {
 
@@ -17,10 +29,18 @@ function Information(props) {
     const [showResult, setShowResult] = useState(false);
     const [result, setResult] = useState({});
 
-    async function handleSubmit(e) {
-        e.preventDefault();
+  const formik = useFormik({
+    initialValues: {
+      cep: ""
+    },
+    validate,
+    onSubmit: e => {
+      handleSubmit()
+    }
+  });
+
+    async function handleSubmit() {
         const { data } = await api.get(`${cep}/json/`);
-        console.log(data);
         setResult(data);
         setShowResult(true);
     }
@@ -41,11 +61,17 @@ function Information(props) {
                 ))
             }
             <div className={location.pathname == "/aboutme" ? "show-form" : "hide-form"}>
-            <Form>
-                <Input
-                    placeholder="Digite seu CEP"
-                    name="cep"
-                    onChange={e => setCep(e.target.value)} />
+            <Form onSubmit={formik.handleSubmit}>
+          <Input
+            id="cep"
+            name="cep"
+            type="text"
+            onChange={formik.handleChange}
+            value={formik.values.cep}
+            required
+            phText="Insira um CEP" />
+             <p className='erro'>{formik.errors.cep ? formik.errors.cep : ""}</p>
+
                 <Button>Procurar CEP</Button>
             </Form>
             {showResult && (
