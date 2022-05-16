@@ -6,8 +6,30 @@ import { useLocation } from 'react-router-dom';
 import { api } from '../../services/api';
 import Button from '../../components/button';
 import Input from '../../components/input';
+import { useFormik } from "formik";
+
+const validate = values => {
+
+  const errors = {};
+
+  if (values.cep.length != 8) {
+    errors.cep = "Insira um CEP válido";
+  }
+
+  return errors;
+};
 
 function Information(props) {
+
+const formik = useFormik({
+    initialValues: {
+      cep: ""
+    },
+    validate,
+    onSubmit: () => {
+      handleSubmit();
+    }
+  });
 
     const location = useLocation();
     const [loading, setLoading] = useState(false);
@@ -17,10 +39,8 @@ function Information(props) {
     const [showResult, setShowResult] = useState(false);
     const [result, setResult] = useState({});
 
-    async function handleSubmit(e) {
-        e.preventDefault();
+    async function handleSubmit() {
         const { data } = await api.get(`${cep}/json/`);
-        console.log(data);
         setResult(data);
         setShowResult(true);
     }
@@ -32,7 +52,7 @@ function Information(props) {
     }, [props.pageName])
 
     return (
-        <Container onSubmit={handleSubmit}>
+        <Container>
         { loading && (<>
             <div className={location.pathname == "/aboutme" ? "about-me" : "card-container"}>
             {
@@ -41,13 +61,19 @@ function Information(props) {
                 ))
             }
             <div className={location.pathname == "/aboutme" ? "show-form" : "hide-form"}>
-            <Form>
-                <Input
-                    placeholder="Digite seu CEP"
-                    name="cep"
-                    onChange={e => setCep(e.target.value)} />
-                <Button>Procurar CEP</Button>
-            </Form>
+              
+            <Form onSubmit={formik.handleSubmit}>
+                    <Input
+                      id="cep"
+                      name="cep"
+                      type="text"
+                      onChange={formik.handleChange}
+                      value={formik.values.cep}
+                      required
+                      phText="Insira um CEP" />
+                      <p className='erro'>{formik.errors.cep ? formik.errors.cep : ""}</p>
+
+              <Button type="submit">Procurar CEP</Button>
             {showResult && (
                 <div>
                     <p>Logradouro: {result.logradouro}</p>
@@ -57,6 +83,7 @@ function Information(props) {
                     <p>DDD: {result.ddd}</p>
                 </div>
             )}
+            </Form>
             </div>
             </div>
             <img className={location.pathname == "/aboutme" ? "profile-pic" : "formation-image"}  src={data.image}/>
